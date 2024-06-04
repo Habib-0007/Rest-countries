@@ -1,4 +1,4 @@
-const  Filter = () => {
+const Filter = () => {
 	return (
 		<section className="filter">
 			<p className="search-container">

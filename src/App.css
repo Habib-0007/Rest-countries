@@ -30,7 +30,7 @@ header {
 		12,
 		1fr
 	);
-	padding: 16px;
+	padding: 16px 16px;
 	background: var(--White);
 }
 
