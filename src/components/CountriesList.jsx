@@ -1,5 +1,5 @@
 const CountriesList = ({ data }) => {
-	data = data.splice(0, 19);
+//	data = data.splice(0, 20);
 	return (
 		<section className="countries-list">
 			{data.map(value => {

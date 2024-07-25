@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import {
 	Routes,
@@ -12,9 +13,19 @@ import CountryDetails from "./pages/CountryDetails";
 import Header from "./components/Header";
 
 const App = () => {
+	const [lightmode, setLightmode] =
+		useState("light");
+
 	return (
-		<section>
-			<Header />
+		<section
+			className={`body ${
+				lightmode === "light" ? "" : "dark-theme"
+			}`}
+		>
+			<Header
+				lightmode={lightmode}
+				setLightmode={setLightmode}
+			/>
 			<Routes>
 				<Route
 					exact

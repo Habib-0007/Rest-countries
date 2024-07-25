@@ -8,10 +8,26 @@ const Filter = () => {
 					placeholder="Search for a country"
 				/>
 			</p>
-			<button className="filter-btn">
-				Filter by region
-				<i className="fa fa-chevron-down"></i>
-			</button>
+			<select className="filter-btn">
+				<option value="">
+					Filter by none
+				</option>
+				<option value="africa">
+					Africa
+				</option>
+				<option value="america">
+					America
+				</option>
+				<option value="asia">
+					Asia
+				</option>
+				<option value="europe">
+					Europe
+				</option>
+				<option value="oceania">
+					Oceania
+				</option>
+			</select>
 		</section>
 	);
 };

@@ -11,17 +11,19 @@
 	font-family: "Nunito Sans", sans-serif;
 }
 
-body {
+.body {
 	--Very-Dark-Blue: hsl(200, 15%, 8%);
 	--Dark-Gray: hsl(0, 0%, 52%);
 	--Very-Light-Gray: hsl(0, 0%, 98%);
 	--White: hsl(0, 0%, 100%);
 	background: var(--Very-Light-Gray);
+	min-height: 100vh;
 }
 
-body.dark-theme {
+.body.dark-theme {
 	--Dark-Blue: hsl(209, 23%, 22%);
 	--Very-Dark-Blue: hsl(207, 26%, 17%);
+	background: var(--Very-Dark-Blue);
 }
 
 header {
@@ -119,7 +121,7 @@ header section p:last-child {
 .countries-list {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 24px;
+	gap: 32px;
 	width: 100%;
 	margin-top: 24px;
 }
@@ -140,7 +142,7 @@ header section p:last-child {
 .countries-list section img {
 	border-radius: 6px 6px 0 0;
 	width: 100%;
-	height: 50%;
+	height: 70%;
 	object-fit: cover;
 }
 
@@ -179,5 +181,9 @@ header section p:last-child {
 
 	.filter .search-container {
 		width: 480px;
+	}
+
+	.countries-list {
+		grid-template-columns: 1fr 1fr;
 	}
 }
